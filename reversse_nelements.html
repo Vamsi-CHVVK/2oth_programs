@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var arr=[1,2,3,4,5];
+    n=parseInt(prompt("enter number:"));
+    l=arr.length
+    if(n-1<l){
+        for(var i=0;i<n/2;i+=n){
+            j=l-1-i;
+            k=l-n;
+            temp=0;
+            temp=arr[j];
+            arr[j]=arr[k];
+            arr[k]=temp;
+            j--;
+            k++;
+        }
+        console.log(arr);
+    }
+    else{
+        console.log("n is not in range");
+    }
+</script>
+</html>
